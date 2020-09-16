@@ -1,0 +1,78 @@
+/* * {
+  box-sizing: border-box;
+} */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+nav {
+  text-align: right;
+}
+form {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+textarea,
+input {
+  outline: none;
+}
+input[type="text"] {
+  -webkit-appearance: none;
+  /* background: #fff; */
+  /* display: flex; */
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: 24px;
+  /* z-index: 3; */
+  height: 44px;
+  margin: 0 auto;
+  width: 482px;
+  padding-left: 30px;
+  font-size: large;
+  /* width: auto; */
+}
+input[type="submit"] {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  color: #5f6368;
+  padding: 12px;
+}
+input[type="submit"]:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color: #222;
+}
+input[value="Advanced Search"] {
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 5px;
+}
+img {
+  margin-bottom: 20px;
+  width: 272px;
+  height: 92px;
+}
+.advanced > div {
+  margin-bottom: 15px;
+  width: 750px;
+  text-align: start;
+}
+.advanced input {
+  /* all: initial; */
+  float: right;
+  border-radius: 0;
+  font-size: medium;
+  padding-left: 5px;
+  height: initial;
+  padding: 5px;
+}
+.advanced input:focus {
+  border: dodgerblue solid 1px;
+}
