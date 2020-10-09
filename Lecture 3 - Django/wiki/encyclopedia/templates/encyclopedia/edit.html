@@ -1,0 +1,20 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Edit page
+{% endblock %}
+
+{% block body %}
+    <h1>Edit page: {{ title }}</h1>
+    <!-- request.path is the current route url -->
+    <form class="newPageForm" action="{{request.path}}" method="POST">
+        {% csrf_token %} 
+        {{form}}
+        <!-- <h3>Title</h3>
+        <input type="text" name="title" required>
+        <h3>Content</h3>
+        <textarea name="content" cols="30" rows="10" required></textarea>-->
+        <button type="submit" class="btn btn-primary">Save</button>     
+    </form>
+
+{% endblock %}
